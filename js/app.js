@@ -1,4 +1,4 @@
-// fetch ids of top story from the api using the fetch api and async await and return only first 30 ids using the splice method
+/ fetch ids of top story from the api using the fetch api and async await and return only first 30 ids using the splice method
 const getNewsIds = async () => {
   const endPoint = 'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty';
   const response = await fetch(endPoint);
@@ -22,7 +22,7 @@ const paintDom = (data, num) => {
     <div class="news">
       <div class="heading">
         <i class="fas fa-caret-up"></i>
-        <a href="${data.url}"<h3>${data.title}</h3></a>
+        <a href="${data.url}"<h3>${data.title} (${data.url})</h3></a>
       </div>
       <div class="comment">
         <p>${data.score} Points by ${data.by} 27 minutes ago | hide | ${data.descendants} comment</p>
